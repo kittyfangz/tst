@@ -62,6 +62,9 @@ int main(int argc, char **argv)
 			case ' ':
 				write_time();
 				break;
+			case '\n':
+				printf("\n");
+				break;
 			case 'q':
 				ungetc(3, stdin); /* bodge solution */
 				break;
